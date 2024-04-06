@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector Master class</title>
+    <style>
+        /* univeral selector */
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: darkblue;
+        }
+
+        /* class selctor */
+        .container {
+            background-color: skyblue;
+
+        }
+
+        /* id selector */
+        #box {
+            background-color: aquamarine;
+        }
+
+        /* child selector */
+        div>p {
+            background-color: red;
+        }
+
+        /* decendant selector */
+        div p {
+            background-color: antiquewhite;
+        }
+
+        /* differnce b/w child selctor and decendant selector */
+
+
+
+        [narendra=singh] {
+            background-color: orange;
+        }
+
+        /* psudo selector */
+        a:hover{
+            background-color: red;
+        }
+        a:link{
+            color: aliceblue;
+        }
+        .narendraop a:visited{
+            color: rgb(255, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>This is heading</h1>
+        <div class="contaner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque repellat officiis facere dolores a
+                dicta
+                repellendus itaque quidem hic. Odit dolore dolorum pariatur enim officia aut omnis modi ducimus neque!
+                Distinctio repellat necessitatibus consequatur maiores alias, recusandae tenetur a reiciendis, quas
+                quaerat
+                natus dicta!</p>
+            <p>Lorem ipsum reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut eum temporibus fuga unde itaque
+                error
+                debitis iusto ipsa ipsum pariatur, illo repellendus.</p>
+            <div id="box">
+
+            </div>
+        </div>
+        <!-- Atribute Selector -->
+        <div narendra="singh">Lorem ipsum dolor sit amet.</div>
+
+    </div>
+    <div class="psudo">
+        <a href="">Narendra Singh</a>
+        <a href="">Narendra Singh</a>
+        <a href="">Narendra Singh</a>
+        <a class="narendraop" href="https://google.com">Narendra Singh 3</a>
+    </div>
+</body>
+
+</html>

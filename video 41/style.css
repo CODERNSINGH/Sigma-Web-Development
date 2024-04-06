@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    height: 40px;
+    width: 200px;
+    border: 2px solid;
+
+}
+.nav{
+    display: flex;
+    align-content: center;
+
+}
+.navbutton{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}

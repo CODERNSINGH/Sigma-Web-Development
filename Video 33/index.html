@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: var(--backcolor);
+        }
+        :root{
+            --backcolor: purple;
+            --navcolor:rgba(255, 0, 0, 0.541);
+            --buttoncolot:aqua;
+        
+        }
+        ul{
+            display: flex;
+            background-color: var(--navcolor);
+            
+        }
+        .nav{
+            background-color: var(--navcolor);
+            padding: 90px;
+
+        }
+        li{
+            border: 2px solid;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--buttoncolot);
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Create a multicolor website which can change color using CSS Variables -->
+    <div class="page">
+        <div class="nav" >
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

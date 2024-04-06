@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive op</title>
+    <style>
+        :root{
+            /* it Have Many Uses try it all */
+            --normamalpadding:12px;
+            --backgroundcolor:skyblue;
+            --containercolor:rgb(155, 235, 135);
+            --box1color:rgb(235, 135, 135);
+            --box2color:rgb(243, 89, 243);
+        }
+        body{
+            background-color: var(--backgroundcolor);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            padding: var(--normamalpadding);
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            background-color: var(--containercolor);
+        }
+        .box{
+            height: 80px;
+            border: 2px solid;
+            width: 100px;
+
+        }
+        .box1{
+            background-color: var(--box1color);
+        }
+        .box2{
+            background-color: var(--box2color);
+        }
+        @media only screen and (max-width:400px)  {
+            body{
+
+                background-color: red;
+                transition: all 2s ease-in-out;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+    </div>
+</body>
+</html>

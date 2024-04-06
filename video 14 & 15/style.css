@@ -1,0 +1,7 @@
+/* This is called External CSS */
+/* and for use this we have add commond to html 
+<link rel="stylesheet" href="style.css"> */
+h3{
+    background-color: orange;
+    color: black;
+}

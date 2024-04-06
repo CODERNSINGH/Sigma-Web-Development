@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selctors</title>
+    <style>
+        *{
+            margin: 5%;
+        }
+        .container{
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .box{
+            height: 200px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: red;
+        }
+        .box1:first-child{
+            color: white;
+        }
+        .box1::first-line{
+            color: green;
+        }
+        .box1::first-letter{
+            font-size: 34px;
+            text-transform: uppercase;
+        }
+        [xyz-x = "lorem"],.box2{ /*Grouping Selector*/
+            background-color: orange;
+        }
+
+        /* even/old child Selector  */
+
+        .box:nth-child(even){
+            background-color: bisque;
+        }
+        .box1::before::before{
+            content: "yo ";
+        }
+    </style>
+</head>
+<body>
+    <!-- Today Code Based on selctors in css and html -->
+    <div class="container">
+        <div class="box box1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius culpa adipisci id molestiae maxime fuga similique fugiat sint deserunt? Omnis ipsam ad a magnam necessitatibus earum autem facilis. Doloribus, hic.</p>
+        </div>
+        <div class="box box2">
+            <p>Qui corrupti dignissimos aut nisi nemo quam, quisquam ex voluptatum ea deleniti expedita, molestiae fuga nulla error molestias inventore animi? Fugit laborum tenetur a molestias accusantium enim adipisci tempora recusandae.</p>
+        </div>
+        <div class="box" xyz-x="lorem">
+            <p>Assumenda modi sit illum laborum esse qui eligendi? Doloribus est unde repudiandae earum corrupti tempora possimus, quia officiis, quod aspernatur cum libero omnis porro nisi tenetur minima voluptates perspiciatis fugiat?</p>
+        </div>
+    </div>
+
+</body>
+</html>

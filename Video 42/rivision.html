@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 80vh;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .box {
+                height: 40px;
+                width: 40px;
+                background-color: red;
+                border: 2px solid;
+                /* transform: scale(1); */
+                transform: skew(1);
+                
+            }
+            .box:hover{
+                
+                transform:skew(2);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">scaleX</div>
+    </div>
+
+</body>
+
+</html>
