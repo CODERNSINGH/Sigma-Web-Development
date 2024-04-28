@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+    <script>
+        let a = document.body.firstElementChild.children
+        a[0].style.backgroundColor = "red"
+        a[1].style.backgroundColor = "orange"
+        a[2].style.backgroundColor = "yellow"
+        a[3].style.backgroundColor = "black"
+        a[4].style.backgroundColor = "blue"
+        a[0].style.color = "white"
+        a[1].style.color = "green"
+        a[2].style.color = "blue"
+        a[3].style.color = "white"
+        a[4].style.color = "red"
+    </script>
+</body>
+</html>
