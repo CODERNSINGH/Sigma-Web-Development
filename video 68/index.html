@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" class="container">
+        <p id="textop" >I am narendra singh</p>
+      <div id="box1" class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+    </div>
+    <script>
+      document.getElementById("container").style.backgroundColor = "red";
+      var boxes = document.getElementsByClassName("box");
+      for (var i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = "green";
+      }
+
+      let m = document.querySelector(".box").style.backgroundColor = "yellow"
+      let mp = document.querySelectorAll(".box");
+
+      mp.forEach(e => {
+        e.style.backgroundColor = "yellow"
+        
+      });
+
+      let g = document.body.getElementsByTagName("p")
+
+      //match
+      let mat = document.body.firstElementChild.children
+      mat[0].matches("#textop")
+      
+
+
+    </script>
+  </body>
+</html>
