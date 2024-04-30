@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        display: flex;
+        column-gap: 5px;
+        border: 0.5px solid white;
+        border-radius: 10px;
+        height: 150px;
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+
+      .tumnail {
+        padding-left: 5px;
+        display: flex;
+        width: 230; /*Using these so that duration position get hidden*/
+        overflow: hidden;
+      }
+      .img {
+        height: 130px;
+        width: 230px;
+      }
+      .duration {
+        height: 16px;
+        padding-block: 2px;
+        position: relative;
+        top: 85px;
+        bottom: 1px;
+        right: 50px;
+        background-color: rgba(5, 5, 5, 0.74);
+        border: transparent;
+        border-radius: 3px;
+      }
+      #title {
+        font-size: 16px;
+      }
+      .statsop {
+        display: flex;
+        gap: 1px;
+      }
+      li {
+        list-style-position: inside;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tumnail">
+        <img class="img" src="tumnail.webp" alt="" />
+        <h4 class="duration">10:34</h4>
+      </div>
+      <div class="contant">
+        <h1 id="title">Introduction to JavaScript || Sigma-Web-Devlopment</h1>
+
+        <div class="stats">
+          <ul class="statsop">
+            <li id="chennel_name">CodeWithHarry</li>
+            <li id="views">1.5M Views</li>
+            <li id="time">7 months ago</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      
+
+
+      function details() {
+        document.getElementById("title").innerHTML = givetitle;
+        document.getElementById("chennel_name").innerHTML = chename;
+        document.getElementById("views").innerHTML = noofview;
+        document.getElementById("time").innerHTML = timeop + " ago";
+      }
+
+
+      noofview = prompt("Enter Total No of Views")
+      if (noofview < 1000){
+        noofview = noofview
+      }
+      else if (1000000 > noofview >= 999999){
+        noofview = noofview/1000 +"K"
+      }
+        
+
+      
+
+      details(
+        (givetitle = prompt("Enter Tittle")),
+        (chename = prompt("Enter Chennel Name")),noofview,
+        (timeop = prompt("Enter How Much time older"))
+      );
+
+      
+
+      
+    </script>
+  </body>
+</html>
