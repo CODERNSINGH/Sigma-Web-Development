@@ -1,3 +1,3 @@
 # Sigma-Web-Development
 
-- author: Narendra Singh
+- Author: Narendra Singh
