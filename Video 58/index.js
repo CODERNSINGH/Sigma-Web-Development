@@ -16,7 +16,7 @@ console.log("Your Result id " + result)
 
 
 
-//arrow function
+//arrow function most imporant one 
 const fun1 = (x)=>{
     console.log("i am arrow",x)
 }
