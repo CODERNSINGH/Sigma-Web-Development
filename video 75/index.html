@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script src="script.js></script> -->
+
+    <script>
+      //firstly we are going to learn asynchronous nature
+      //mean kisi commond ingnore kare phle exicte karna than run that commond in last
+
+      console.log("This is first Commond");
+      console.log("This is Second Commond");
+
+      setTimeout(() => {
+        console.log("This is Third one");
+      }, 2000);
+
+      setTimeout(() => {
+        console.log("This is fourth one");
+      }, 0);
+
+      console.log("fifth one");
+
+
+      //Callback Function 
+
+      function loadScript(src,Callback){
+        let script  = document.createElement('script')
+        script.src = src
+        script.onload = () => Callback(script)
+        document.head.append(script)
+        
+      }
+
+      loadScript('script.js',(script) =>{
+        alert("script is load")
+        alert(script.src)
+        //meand ab hum jo chaiteh vo script.js me likh sakte hai or vo yaha run hoga
+      });
+
+    </script>
+  </body>
+</html>
