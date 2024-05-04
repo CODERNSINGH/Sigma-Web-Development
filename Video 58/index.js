@@ -19,5 +19,6 @@ console.log("Your Result id " + result)
 //arrow function most the imporant one 
 const fun1 = (x)=>{
     console.log("i am arrow",x)
+    console.log("This Function is Running")
 }
 fun1(23);
