@@ -11,10 +11,10 @@ var _23 = "Hi There GPT THIS side"
     console.log(a)
 
 }
-
+//var and let tell browser to make a variable
 /*There are rules for choosing variable 
 1. letter digit sign allowed for variable Naming
-2. must begin ==> letter, $ and _
+2. must begin ==> letter(a-z, A-Z), $ and _
 3. javascript reverse not allowd */
 
 
@@ -47,3 +47,7 @@ console.log(nar)
 nar.salary = "2000cr"
 
 console.log(nar)
+
+//comment's 
+/* Second type of Commonts */
+
