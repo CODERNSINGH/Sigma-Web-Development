@@ -49,5 +49,7 @@ nar.salary = "2000cr"
 console.log(nar)
 
 //comment's 
-/* Second type of Commonts */
+/* Second type of Commonts we 
+can use this in multiple lines
+ */
 
